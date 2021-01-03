@@ -6,7 +6,7 @@
     :expand-on-hover="expandOnHover"
     :right="$vuetify.rtl"
     :src="barImage"
-    mobile-break-point="960"
+    mobile-breakpoint="960"
     app
     width="260"
     v-bind="$attrs"
@@ -110,6 +110,11 @@
           icon: 'mdi-view-dashboard',
           title: 'dashboard',
           to: '/',
+        },
+        {
+          icon: 'mdi-message-text',
+          title: 'Articulos',
+          to: '/articulos',
         },
         {
           icon: 'mdi-account',

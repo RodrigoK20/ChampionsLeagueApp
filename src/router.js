@@ -17,6 +17,30 @@ export default new Router({
           path: '',
           component: () => import('@/views/dashboard/Dashboard'),
         },
+        // Listar Articulos
+        {
+          name: 'ListarArticulos',
+          path: '/articulos',
+          component: () =>import('@/views/articulos/ListarArticulos'),
+
+        },
+
+          //Crear Articulo
+          {
+            name: 'CrearArticulo',
+            path: '/articulos/crear',
+            component: () =>import('@/views/articulos/CrearArticulo'),
+  
+          },
+
+            //Editar Articulos
+        {
+          name: 'EditarArticulo',
+          path: '/articulos/editar/:id',
+          component: () =>import('@/views/articulos/EditarArticulo'),
+
+        },
+
         // Pages
         {
           name: 'User Profile',
