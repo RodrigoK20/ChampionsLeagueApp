@@ -1,4 +1,4 @@
-<template>
+/* <template>
   <v-app-bar
     id="app-bar"
     absolute
@@ -180,4 +180,4 @@
       }),
     },
   }
-</script>
+</script> */

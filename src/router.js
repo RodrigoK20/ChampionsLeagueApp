@@ -17,30 +17,104 @@ export default new Router({
           path: '',
           component: () => import('@/views/dashboard/Dashboard'),
         },
-        // Listar Articulos
+        // Listar Estadios
         {
-          name: 'ListarArticulos',
-          path: '/articulos',
-          component: () =>import('@/views/articulos/ListarArticulos'),
+          name: 'ListarEstadios',
+          path: '/estadios',
+          component: () => import('@/views/estadios/ListarEstadios'),
 
         },
 
-          //Crear Articulo
+        // Crear Estadio
+        {
+          name: 'CrearEstadio',
+          path: '/crear',
+          component: () => import('@/views/estadios/CrearEstadio'),
+
+        },
+
+        // Editar Estadio
+        {
+          name: 'EditarEstadio',
+          path: '/editar',
+          component: () => import('@/views/estadios/EditarEstadio'),
+
+        },
+
+        // Listar Equipos
+        {
+          name: '',
+          path: '/equipos',
+          component: () => import('@/views/equipos/ListarEquipos'),
+
+        },
+
+       // Crear Equipo
+       {
+        name: '',
+        path: '/creareq',
+        component: () => import('@/views/equipos/CrearEquipo'),
+
+      },
+      // Listar Jugadores
+        {
+          name: '',
+          path: '/jugadores',
+          component: () => import('@/views/jugadores/ListarJugadores'),
+
+        },
+          // Listar Jugadores
           {
-            name: 'CrearArticulo',
-            path: '/articulos/crear',
-            component: () =>import('@/views/articulos/CrearArticulo'),
-  
+            name: 'JugadoresEquipo',
+            path: '/equipo/jugadores',
+            component: () => import('@/views/equipos/JugadoresEquipo'),
+
           },
 
-            //Editar Articulos
-        {
-          name: 'EditarArticulo',
-          path: '/articulos/editar/:id',
-          component: () =>import('@/views/articulos/EditarArticulo'),
+         // Detalle Jugador
+          {
+            name: 'DetalleJugador',
+            path: '/jugador/detalle',
+            component: () => import('@/views/jugadores/DetallesJugador'),
 
-        },
+          },
+         // Listar Torneos
+         {
+            name: 'Torneos',
+            path: '/torneos',
+            component: () => import('@/views/torneos/ListarTorneos'),
 
+         },
+
+         // Registrar Equipos Torneos
+         {
+            name: 'RegistrarEquipos',
+            path: '/torneos/equipos',
+            component: () => import('@/views/torneos/RegistrarEquipos'),
+
+         },
+
+        // Registrar Partidos  por torneo
+         {
+            name: 'RegistrarPartidos',
+            path: '/torneos/partidos',
+            component: () => import('@/views/torneos/PartidosTorneo'),
+
+         },
+         // Listar Partidos Torneo
+         {
+            name: 'ListarPartidosTorneo',
+            path: '/partidos',
+            component: () => import('@/views/torneos/ListarPartidosTorneo'),
+
+         },
+          // Listar Partidos Torneo
+         {
+            name: 'RegistrarResultadoPartidoTorneo',
+            path: '/resultado',
+            component: () => import('@/views/torneos/RegistrarResultado'),
+
+         },
         // Pages
         {
           name: 'User Profile',

@@ -20,8 +20,11 @@ import './plugins/chartist'
 import './plugins/vee-validate'
 import vuetify from './plugins/vuetify'
 import i18n from './i18n'
+import VueAxios from 'vue-axios'
+import axios from 'axios'
 
 Vue.config.productionTip = false
+Vue.use(VueAxios, axios)
 
 new Vue({
   router,
